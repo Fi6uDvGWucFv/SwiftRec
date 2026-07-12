@@ -13,6 +13,7 @@
   <a href="https://github.com/Fi6uDvGWucFv/SwiftRec/releases/latest"><img src="https://img.shields.io/badge/download-latest-13E8A5?style=for-the-badge" alt="Download"></a>
   <img src="https://img.shields.io/badge/platform-Windows%207--11-2b2f36?style=for-the-badge" alt="Windows 7-11">
   <img src="https://img.shields.io/badge/license-MIT-2b2f36?style=for-the-badge" alt="MIT License">
+  <a href="https://t.me/windows_free_software"><img src="https://img.shields.io/badge/Telegram-@windows__free__software-229ED9?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
 </p>
 
 <p align="center">
@@ -42,6 +43,8 @@ Two ways to run it:
 | **Portable** | `SwiftRec-Portable.zip` — unzip and run `SwiftRec.exe`, no installation needed |
 
 Website: [swiftrecpc.com](https://swiftrecpc.com)
+
+Telegram: [@windows_free_software](https://t.me/windows_free_software) — free & clean Windows software, new releases posted here.
 
 ## Quick start
 
