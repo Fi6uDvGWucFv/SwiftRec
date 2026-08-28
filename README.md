@@ -39,8 +39,8 @@ Two ways to run it:
 
 | | |
 |---|---|
-| **Installer** | `SwiftRec-Setup.exe` — installs SwiftRec with a Start-menu and optional desktop shortcut |
-| **Portable** | `SwiftRec-Portable.zip` — unzip and run `SwiftRec.exe`, no installation needed |
+| **Installer** | `SwiftRecSetup.zip` — download, unzip and run `SwiftRecSetup.msi` to install. Adds Start-menu and optional desktop shortcut. |
+| **Runtime**   | Requires .NET Framework 4.7.2 (preinstalled on Windows 8.1 / 10 / 11) |
 
 Website: [swiftrecpc.com](https://swiftrecpc.com)
 
