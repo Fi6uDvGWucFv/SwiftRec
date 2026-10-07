@@ -1,10 +1,14 @@
-# SwiftRec — a lightweight screen recorder for Windows with a global hotkey
+# SwiftRec — simple screen recording in Windows 11 without an account or watermark
 
-SwiftRec is a small, free screen recorder for Windows 10 and Windows 11 that stays out of your way: no account, no watermark, no on-screen overlay cluttering the capture. If you just want to tap a hotkey, grab a clean MP4 of what's on your monitor, and get back to work, swiftrec is built for exactly that.
+SwiftRec is a small, free tool for screen recording in Windows 11 (and Windows 10) that stays out of your way: no account, no watermark, no on-screen overlay cluttering the capture. Tap a hotkey, grab a clean MP4 of what's on your monitor, and get back to work — that's the whole idea.
 
 <p align="center">
   <img src="docs/screenshot-main.png" width="480" alt="SwiftRec main window">
 </p>
+
+## Why use this for screen recording in Windows 11?
+
+The built-in Xbox Game Bar handles quick clips, but it won't record File Explorer, won't follow a specific region, and leaves you juggling settings. SwiftRec gives you full-screen, single-window, region, or per-monitor capture with mic + system audio muxed into one MP4 — launched from a hotkey, saved locally, no sign-in.
 
 ## Download
 
